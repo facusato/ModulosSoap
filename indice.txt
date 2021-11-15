@@ -1,0 +1,6 @@
+app500 -> modulo soap de banco con su bd propia, no tiene interfaz, 
+modulo soap.py tiene los metodos que se comunicarian con las apis de la tienda
+
+
+app502 -> modulo soap de correo, tiene su bd propia, tiene interfaz, 
+el modulo del servicio es el soap.py y dp en el views.py esta el controlador que maneja el bkend con la interfaz

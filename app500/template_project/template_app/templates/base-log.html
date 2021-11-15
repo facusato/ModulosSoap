@@ -1,0 +1,24 @@
+{% load static %} 
+<html>
+ 
+<head>
+	<title>Banca</title>
+	<meta charset="ISO-8859-1">
+	<link rel="stylesheet" href="{% static '../template_project/static/css/index.css' %}" />	
+	<link rel="shortcut icon" href="{% static '../template_project/static/img/logo.ico' %}" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body class="base">
+
+
+	<div class="base">
+			{% block content %}
+
+			{% endblock %}
+	</div>
+	
+</body>
+
+
+</html>

@@ -1,0 +1,40 @@
+
+{% extends "base-log.html" %}
+{% load static %} 
+{% block content %}
+
+
+<div class="register_form">
+	<form method="post">
+		{% csrf_token %}
+		<br>
+		{{form.username}}
+		<br>
+		{{form.email}}
+		<br>
+		<p class = "register">
+			<p style="background-color: white;"><img class ="icono" src="{% static '../template_project/static/img/alert.png'%}" alt="Alerta" title="Alerta">
+			{{form.password1.help_text}}
+			</p>
+		</p>
+
+		{{form.password1}}
+		<br>
+		{{form.password2}}
+		<br>
+		<br>
+		<br>
+		<button type="submit">
+			<img class ="icono" src="{% static '../template_project/static/img/login.png'%}" alt="Registrarse" title="Registrarse">  Registrarse
+		</button>
+
+		{% for message in messages %}
+			<p class="register">{{message}}</p>
+		{% endfor %}
+
+		<br>
+		<p class = "register"> Ya tienes una cuenta ? <a href ="{% url 'login' %}">loguea</a> </p>
+	</form>
+</div>
+
+{% endblock %}

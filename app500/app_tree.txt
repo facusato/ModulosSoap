@@ -1,0 +1,137 @@
+
+C:\Users\Equipo\Desktop\workspace_Py\app500>set "curpath=C:\Users\Equipo\Desktop
+\workspace_Py\app500"
+
+C:\Users\Equipo\Desktop\workspace_Py\app500>echo -----ARBOL DE DIRECTORIOS----
+-----ARBOL DE DIRECTORIOS----
+
+C:\Users\Equipo\Desktop\workspace_Py\app500>date /t
+10/10/2021
+
+C:\Users\Equipo\Desktop\workspace_Py\app500>time /t
+03:34 a.m.
+
+C:\Users\Equipo\Desktop\workspace_Py\app500>tree /f
+Listado de rutas de carpetas
+El número de serie del volumen es 0019F1A8 08DA:CA20
+C:.
+¦   app_tree.cmd
+¦   app_tree.txt
+¦
++---awats
+¦   ¦   automated web app template.txt
+¦   ¦   creacion.cmd
+¦   ¦
+¦   +---robocopy
+¦       +---template_project
+¦           +---template_app
+¦           ¦   ¦   forms.py
+¦           ¦   ¦   models.py
+¦           ¦   ¦   urls.py
+¦           ¦   ¦   views.py
+¦           ¦   ¦
+¦           ¦   +---templates
+¦           ¦           base-log.html
+¦           ¦           base.html
+¦           ¦           home.html
+¦           ¦           index.html
+¦           ¦           register.html
+¦           ¦
+¦           +---template_project
+¦               ¦   urls.py
+¦               ¦
+¦               +---static
+¦                   +---css
+¦                   ¦       index.css
+¦                   ¦
+¦                   +---img
+¦                   ¦       alert.png
+¦                   ¦       delete.png
+¦                   ¦       fondo.jpg
+¦                   ¦       fondo_1.jpg
+¦                   ¦       login.png
+¦                   ¦       logo.ico
+¦                   ¦       logout.png
+¦                   ¦       refresh.png
+¦                   ¦       search.png
+¦                   ¦       send.png
+¦                   ¦
+¦                   +---js
+¦                   +---templates
++---batch
+¦       appModels_to_db.cmd
+¦       djangoProj_to_db.cmd
+¦       LANrunserver.cmd
+¦       runserver.cmd
+¦
++---template_project
+    ¦   db.sqlite3
+    ¦   manage.py
+    ¦
+    +---template_app
+    ¦   ¦   admin.py
+    ¦   ¦   apps.py
+    ¦   ¦   forms.py
+    ¦   ¦   models.py
+    ¦   ¦   tests.py
+    ¦   ¦   urls.py
+    ¦   ¦   views.py
+    ¦   ¦   __init__.py
+    ¦   ¦
+    ¦   +---migrations
+    ¦   ¦   ¦   __init__.py
+    ¦   ¦   ¦
+    ¦   ¦   +---__pycache__
+    ¦   ¦           __init__.cpython-37.pyc
+    ¦   ¦
+    ¦   +---templates
+    ¦   ¦       base-log.html
+    ¦   ¦       base.html
+    ¦   ¦       home.html
+    ¦   ¦       index.html
+    ¦   ¦       register.html
+    ¦   ¦
+    ¦   +---__pycache__
+    ¦           admin.cpython-37.pyc
+    ¦           apps.cpython-37.pyc
+    ¦           forms.cpython-37.pyc
+    ¦           models.cpython-37.pyc
+    ¦           urls.cpython-37.pyc
+    ¦           views.cpython-37.pyc
+    ¦           __init__.cpython-37.pyc
+    ¦
+    +---template_project
+        ¦   asgi.py
+        ¦   settings.py
+        ¦   urls.py
+        ¦   wsgi.py
+        ¦   __init__.py
+        ¦
+        +---static
+        ¦   +---css
+        ¦   ¦       index.css
+        ¦   ¦
+        ¦   +---img
+        ¦   ¦       alert.png
+        ¦   ¦       delete.png
+        ¦   ¦       fondo.jpg
+        ¦   ¦       fondo_1.jpg
+        ¦   ¦       login.png
+        ¦   ¦       logo.ico
+        ¦   ¦       logout.png
+        ¦   ¦       refresh.png
+        ¦   ¦       search.png
+        ¦   ¦       send.png
+        ¦   ¦
+        ¦   +---js
+        ¦   +---templates
+        +---__pycache__
+                settings.cpython-37.pyc
+                urls.cpython-37.pyc
+                wsgi.cpython-37.pyc
+                __init__.cpython-37.pyc
+
+
+C:\Users\Equipo\Desktop\workspace_Py\app500>pause
+Presione una tecla para continuar . . .
+                

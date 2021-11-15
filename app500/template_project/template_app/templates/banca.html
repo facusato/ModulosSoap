@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+{% load static %} 
+{% block content %}
+
+	<div class='halfright'>
+		<div class='contenido_form'>
+			<p class="titulo">INGRESAR PERSONA</p>
+			<form method="post">
+				{% csrf_token %}
+				
+				{{form_persona.dni}}
+				
+				{{form_persona.nombre}}
+				
+				{{form_persona.apellido}}
+				
+				{{form_persona.domicilio}}
+
+				{{form_persona.fechaNac}}
+				
+				<button class="login_form" type="submit">
+					<img class ="icono" src="{% static '../template_project/static/img/send.png' %}" alt="Ingresar" title="Ingresar">  Ingresar
+				</button>
+
+
+				<p class= "msg">{{form_persona_msg}}</p>
+
+			</form>
+			<br>
+		</div>
+	</div>
+
+
+	<div class='halfleft'>
+
+		<p class= "titulo">LISTA DE PERSONAS</p>
+		<div class='table_short_container'>
+			<table class="tabla">
+				<tr>
+					<th>DNI</th>
+					<th>NOMBRE</th>
+					<th>APELLIDO</th>
+					<th>DOMICILIO</th>
+					<th>FECHA NAC</th>
+				</tr>
+				{% for item in item_list %}
+				<tr>
+					<td>{{ item.dni }} </td> 
+					<td>{{ item.nombre }} </td> 
+					<td>{{ item.apellido }} </td> 
+					<td>{{ item.domicilio }} </td> 
+					<td>{{ item.fechaNac }} </td> 
+				</tr>
+				{% endfor %}
+			</table>
+		</div>
+	
+		<p class= "titulo">LISTA DE CUENTAS</p>
+		<div class='table_short_container'>
+			<table class="tabla">
+				<tr>
+					<th>NRO CUENTA</th>
+					<th>DNI PERSONA</th>
+					<th>SALDO</th>
+				</tr>
+				{% for item in item_list_cuentas %}
+				<tr>
+					<td>{{ item.nroCuenta }} </td> 
+					<td>{{ item.dniPersona }} </td> 
+					<td>{{ item.saldo }} </td> 
+
+				</tr>
+				{% endfor %}
+			</table>
+		</div>
+	</div>
+
+{% endblock %}

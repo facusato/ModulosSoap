@@ -1,0 +1,39 @@
+{% load static %} 
+<html>
+ 
+<head>
+	<title>Correo</title>
+	<meta charset="ISO-8859-1">
+	<link rel="stylesheet" href="{% static '../template_project/static/css/index.css' %}" />	
+	<link rel="shortcut icon" href="{% static '../template_project/static/img/logo.ico' %}" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body class="base">
+
+	<div class="base">
+
+		<ul class="navbar">
+			<li><a href="/home">Home</a></li>
+			<li><a href="/envios">Correo</a></li>
+			<li><a href="/soap?wsdl">Soap Service XML</a></li>
+
+
+			<li id="right_navbar"><a href="{% url 'logout' %}"><img class ="icono" src="{% static '../template_project/static/img/logout.png'%}" alt="Salir" title="Salir"> Salir</a></li>
+			<p>Hola {{request.user}} &#160</p>
+		</ul>
+
+
+		
+
+			{% block content %}
+
+			{% endblock %}
+
+
+	</div>
+	
+</body>
+
+
+</html>

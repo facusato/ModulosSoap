@@ -1,0 +1,35 @@
+{% extends "base-log.html" %}
+{% load static %} 
+{% block content %}
+
+
+<div class="base">
+	
+<div class="register_form">
+	<form method="post">
+		{% csrf_token %}
+		<br>
+		{{form.username}}
+		<br>
+		{{form.password}}
+		<br>
+		{{form.errors}}
+		<br>
+		<button class= "register_form" type="submit">
+			<img class ="icono" src="{% static '../template_project/static/img/login.png' %}" alt="Ingresar" title="Ingresar">  Ingresar
+		</button>
+
+		{% for message in messages %}
+			<p class="register">{{message}}</p>
+		{% endfor %}
+
+		<br>
+		<br>
+		
+	</form>
+</div>
+</div>
+
+
+
+{% endblock %}

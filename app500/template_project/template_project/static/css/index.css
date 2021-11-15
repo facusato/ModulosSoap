@@ -1,0 +1,479 @@
+/*	PLANTILLA BASE 			BEGIN*/
+
+body.base { 
+	background: black;
+	margin: 0px;
+	padding: 0px;
+	background: url('../img/fondo.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+  	background-position: center center;
+  	text-align: center;
+}
+
+div.base {
+	margin: 1% auto;
+	width: 100%;
+	height: auto;
+	background: rgba(255, 255, 255, 0.0);
+	text-align:center;
+}
+
+/*	PLANTILLA BASE 			END*/
+
+/*	TITULO			BEGIN*/
+
+p.titulo {
+	border-bottom: 1px solid #999;
+	background-color: black;
+	color: white;
+	font-weight: bold;
+}
+
+p.msg {
+	border-bottom: 1px solid #999;
+	background-color: lightblue;
+	color: darkblue;
+	font-weight: bold;
+	width: auto;
+}		
+
+/*	TITULO		END*/
+
+/*	REGISTER Y LOGIN		BEGIN*/
+
+div.register_form {
+	text-align: center;
+	background: rgba(255, 255, 255, 0.1);
+	height: auto;
+	width: 30%;
+	margin-left: 33%;
+	margin-top: 10%;
+	box-shadow: 0 0 15px black;
+}
+
+.register_form input[type=text]{
+	width: 50%;
+	padding: 5px;
+	margin: 5px;
+	text-align: center;
+}
+
+.register_form input[type=password]{
+	width: 50%;
+	padding: 5px;
+	margin: 5px;
+	text-align: center;
+}
+
+.register_form button[type=submit]{
+	width: 50%;
+	padding: 5px;
+	margin: 5px;
+	text-align: center;
+}
+
+p.register {
+	color: white; 
+	background: rgba(0, 0, 0, 0.5);
+}
+
+.register a {
+	color: lightgreen;
+}
+
+/*	REGISTER Y LOGIN		END*/
+
+/*	BARRA DE NAVEGACION		BEGIN*/
+
+ul.navbar {	
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+}
+
+.navbar li {
+	display: inline;	
+	float: left;
+}
+
+#right_navbar{
+	display: inline;	
+	float: right;
+	background-color: #777;
+}
+#right_navbar a:hover{
+	background-color: #444;	
+}
+
+
+.navbar p{
+	float: right;
+	color: white;
+	font-size: 15px;
+	font-family: monospace;
+}
+
+.navbar a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+.navbar a:hover {
+	background-color: #111;
+}
+
+/*	BARRA DE NAVEGACION		END*/
+
+/*	CONTENEDOR GENERAL PANTALLA DIVIDIA IZQ 50% - DER 50%	BEGIN*/
+
+div.halfleft {
+	width: 49.8%;
+	height: auto;
+	background: rgba(255, 255, 255, 0.0);
+	float: left;
+}
+
+div.halfright{
+	width: 49.8%;
+	height: auto;
+	background: rgba(255, 255, 255, 0.0);
+	float: right;
+}
+
+/*	CONTENEDOR GENERAL PANTALLA DIVIDIA IZQ 50% - DER 50%	END*/
+
+/*	TABLA DE DATOS 	 BEGIN*/
+
+div.table_container {
+	width: 100%;
+	height: 65%;
+	overflow-y:auto;
+}
+
+div.table_short_container {
+	width: 100%;
+	height: 30%;
+	overflow-y:auto;
+}
+
+table.tabla {
+	/*background-color: white;*/
+	background-color: #333;
+	/*background-color: rgba(255, 255, 255, 0.9);*/
+	width: 98%;
+   	border: 1px solid #999;
+   	text-align: left;
+   	border-collapse: collapse;
+   	/*margin: 0 auto;*/
+   	margin: 1px;
+   	overflow: scroll;
+   	color: lightgrey;
+}
+
+.tabla th {
+	border-bottom: 1px solid #999;
+  	background-color: black;
+	color: white;
+	text-align: center;
+	position: -webkit-sticky;
+  	position: sticky;
+	top: 0;
+}
+
+.tabla td{
+	border-bottom: 1px solid #999;
+  	text-align: center;
+}
+
+.tabla tr:hover {
+	/*background-color: rgba(100, 100, 100, 0.5);*/
+	background-color: white;
+	color: black;
+}
+
+/*	TABLA DE DATOS 	 END*/
+
+/*	CONTENEDOR DE IMAGEN CENTRADA 	BEGIN */
+
+div.image-container {
+	width: 100%;
+	height: 100%; 
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.image-container img {
+	width: auto;
+	height: auto;
+}
+/*	CONTENEDOR DE IMAGEN CENTRADA 	END	*/
+
+
+/*	CONTENEDOR DE IMAGEN CENTRADA GRAFICOS MATPLOTLIB 	*/
+
+div.matplot-image-container {
+	background-color: #333;
+	/*background-color: rgba(0, 0, 0, 0.7);*/
+	width: 80%;
+	height: 65%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+.matplot-image-container img {
+	width: 100%;
+	height: 100%;
+	
+}
+/*	CONTENEDOR DE IMAGEN CENTRADA 	END	*/
+
+
+
+/*	INPUTS  	BEGIN	*/
+
+
+button[type=submit] {	
+	background-color: rgba(100, 100, 100, 0.9);
+	color: white;
+	text-align: center;
+	width: 100px;
+	margin: 3px;
+	cursor: pointer;
+}
+button[type=submit]:hover {
+	background-color: white;
+	color: black;
+}
+
+
+button[type=reset] {
+	background-color: rgba(100, 100, 100, 0.9);
+	color: white;
+	text-align: center;
+	width: 100px;
+	margin: 3px;
+	cursor: pointer;
+}
+button[type=reset]:hover {
+	background-color: white;
+	color: black;
+}
+
+
+input[type=file] {
+	background-color: rgba(100, 100, 100, 0.9);
+	color: white;
+	text-align: center;
+	width: auto;
+	margin: 3px;
+	cursor: pointer;
+}
+input[type=file]:hover {
+	background-color: white;
+	color: black;
+}
+
+
+select {
+	background-color: white;
+	padding-left: 40px;
+	padding-right: 40px;
+	text-align: center;
+	margin: 3px;
+	cursor: pointer;
+	/*background-image: url('../img/search.png');
+	background-position: 3px 3px;
+	background-repeat: no-repeat;*/
+}
+select:focus{
+	background-color: rgba(100, 100, 100, 0.5);
+	color: white;
+}
+
+
+input[type=text] {
+	background-color: rgba(100, 100, 100, 0.9);
+	color: white;
+	width: 200px;
+	text-align: center;
+	margin: 3px;
+	/*background-image: url('../img/search.png');
+	background-position: 3px 3px;
+	background-repeat: no-repeat;*/
+}
+input[type=text]:focus {
+	background-color: white;
+	color: black;
+}
+
+
+input[type=password] {
+	
+	background-color: rgba(100, 100, 100, 0.9);
+	color: white;
+	width: 200px;
+	text-align: center;
+	margin: 3px;
+	/*background-image: url('../img/search.png');
+	background-position: 3px 3px;
+	background-repeat: no-repeat;*/
+}
+input[type=password]:focus {
+	background-color: white;
+	color: black;
+}
+
+/*	INPUTS 	END	*/
+
+/*	CONTENEDOR DE contenido  	BEGIN	*/
+div.contenido_form {
+	background-color: rgba(255, 255, 255, 0.0);
+	height: auto;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: 0 0 0px black;
+}
+
+/*	CONTENEDOR DE contenido  	BEGIN	*/
+
+/*	RESPONSIVE 	*//*	RESPONSIVE 	*//*	RESPONSIVE 	*//*	RESPONSIVE 	*//*	RESPONSIVE 	*/
+/*	RESPONSIVE 	*//*	RESPONSIVE 	*//*	RESPONSIVE 	*//*	RESPONSIVE 	*//*	RESPONSIVE 	*/
+/*	RESPONSIVE 	*//*	RESPONSIVE 	*//*	RESPONSIVE 	*//*	RESPONSIVE 	*//*	RESPONSIVE 	*/
+/*	RESPONSIVE 	*//*	RESPONSIVE 	*//*	RESPONSIVE 	*//*	RESPONSIVE 	*//*	RESPONSIVE 	*/
+/*	RESPONSIVE 	*//*	RESPONSIVE 	*//*	RESPONSIVE 	*//*	RESPONSIVE 	*//*	RESPONSIVE 	*/
+
+@media screen and (max-width: 600px) {
+
+/*	RESPONSIVE 	*//*	RESPONSIVE 	*//*	RESPONSIVE 	*//*	RESPONSIVE 	*//*	RESPONSIVE 	*/
+/*	RESPONSIVE 	*//*	RESPONSIVE 	*//*	RESPONSIVE 	*//*	RESPONSIVE 	*//*	RESPONSIVE 	*/
+/*	RESPONSIVE 	*//*	RESPONSIVE 	*//*	RESPONSIVE 	*//*	RESPONSIVE 	*//*	RESPONSIVE 	*/
+/*	RESPONSIVE 	*//*	RESPONSIVE 	*//*	RESPONSIVE 	*//*	RESPONSIVE 	*//*	RESPONSIVE 	*/
+/*	RESPONSIVE 	*//*	RESPONSIVE 	*//*	RESPONSIVE 	*//*	RESPONSIVE 	*//*	RESPONSIVE 	*/
+
+
+/*	PLANTILLA BASE 		BEGIN*//*	RESPONSIVE 	*/
+
+body.base {
+    background: #444;
+}
+
+div.base {
+	width: 100%;
+	height: auto;
+	background: rgba(255, 255, 255, 0.0);
+}
+/*	PLANTILLA BASE 		END*//*	RESPONSIVE 	*/
+
+/*	REGISTER Y LOGIN	BEGIN*//*	RESPONSIVE 	*/
+
+div.register_form {
+	background-color: rgba(144, 238, 144, 0.5);
+	height: auto;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: 0 0 0px black;
+}
+
+.register_form input[type=text]{
+	width: 90%;
+	padding: 5px;
+	text-align: center;
+}
+
+.register_form input[type=password]{
+	width: 90%;
+	padding: 5px;
+	text-align: center;
+}
+
+.register_form button[type=submit]{
+	width: 90%;
+	padding: 5px;
+	text-align: center;
+}
+/*	REGISTER Y LOGIN	END*//*	RESPONSIVE 	*/
+
+/*	CONTENEDOR GENERAL PANTALLA DIVIDIA IZQ 50% - DER 50%	BEGIN*//*	RESPONSIVE 	*/
+
+div.halfleft {
+	width: 100%;
+	height: auto;
+	background: rgba(255, 255, 255, 0.5);
+	text-align:center;
+}
+
+div.halfright{
+	width: 100%;
+	height: auto;
+	background: rgba(255, 255, 255, 0.5);
+	text-align:center;
+}
+
+/*	CONTENEDOR GENERAL PANTALLA DIVIDIA IZQ 50% - DER 50%	END*//*	RESPONSIVE 	*/
+
+/*	TABLA DE DATOS 	BEGIN*//*	RESPONSIVE 	*/
+
+
+div.table_container {
+	width: 98%;
+	height: 35%;
+	overflow-y:auto;
+}
+
+table.tabla {
+	/*background-color: white;*/
+	background-color: rgba(255, 255, 255, 0.0);
+	width: 95%;
+   	border: 1px solid #999;
+   	text-align: left;
+   	border-collapse: collapse;
+   	/*margin: 0 auto;*/
+   	margin: 1px;
+   	overflow: scroll;
+}
+
+.tabla th {
+	border-bottom: 1px solid #999;
+  	background-color: black;
+	color: white;
+	text-align: center;
+	position: -webkit-sticky;
+  	position: sticky;
+	top: 0;
+}
+
+.tabla td{
+	border-bottom: 1px solid #999;
+  	text-align: center;
+}
+
+.tabla tr:hover {
+	background-color: rgba(100, 100, 100, 0.5);
+	color: white;
+}
+
+/*	TABLA DE DATOS 	END*//*	RESPONSIVE 	*/
+
+/*	CONTENEDOR DE IMAGEN CENTRADA 	BEGIN*//*	RESPONSIVE 	*/
+
+div.image-container {
+	width: 100%;
+	height: 60%;
+	left: 0%;
+}
+
+.image-container img {
+	width: 100%;
+	height: 100%;
+}
+
+/*	CONTENEDOR DE IMAGEN CENTRADA 	END*//*	RESPONSIVE 	*/

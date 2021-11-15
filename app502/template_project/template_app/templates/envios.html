@@ -1,0 +1,84 @@
+{% extends "base.html" %}
+{% load static %} 
+{% block content %}
+
+<!--	50% IZQ - TABLA DE DATOS -->	
+
+
+
+<div class='halfleft'>
+	
+	<div class='contenido_form'>
+		<p class="titulo">FILTRAR ENVIOS</p>
+		<form method="post">
+			{% csrf_token %}
+			
+			{{form_filtrar_envios.filtro}}
+			
+			<button class="login_form" type="submit">
+				<img class ="icono" src="{% static '../template_project/static/img/search.png' %}" alt="Filtrar" title="Filtrar">  Filtrar
+			</button>
+
+			<p class= "msg">
+				{{msg}}
+			</p>
+
+		</form>
+		<br>
+	</div>
+
+	<div class='table_container'>
+		<table class="tabla">
+			<tr>
+				<th>ID</th>
+				<th>COD DE SEGUIM</th>
+				<th>ID VENDEDOR</th>
+				<th>DNI DESTINATARIO</th>
+				<th>ESTADO</th>
+				<th>DOMIC DESTINO</th>
+			</tr>
+			{% for item in item_list %}
+			<tr>
+				<td>{{ item.id }} </td> 
+				<td>{{ item.codigoSeguim }} </td> 
+				<td>{{ item.nroVendedor }} </td> 
+				<td>{{ item.dniPersona }} </td> 
+				<td>{{ item.estado }} </td> 
+				<td>{{ item.domicilio_entrega }} </td> 
+				
+			</tr>
+			{% endfor %}
+		</table>
+		<br>
+	</div>
+</div>
+
+<div class='halfright'>
+	
+	<div class='contenido_form'>
+		<p class="titulo">CAMBIAR ESTADO</p>
+		<form method="post">
+			{% csrf_token %}
+			
+			{{form_cambio_estado.codigoSeguim}}
+			{{form_cambio_estado.estado}}
+			
+			<button class="login_form" type="submit">
+				<img class ="icono" src="{% static '../template_project/static/img/send.png' %}" alt="Cambiar" title="Cambiar">  Cambiar
+			</button>
+
+			<p class= "msg">
+				{{form_cambio_estado_msg}}
+			</p>
+
+		</form>
+		<br>
+	</div>
+
+
+</div>
+
+
+
+
+{% endblock %}
